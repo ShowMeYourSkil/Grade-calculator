@@ -35,6 +35,12 @@ public class Main {
         for(int i = 0; i < grade.length; i++){
             grade [i] = scanner.nextDouble();
         }
+         /**
+         * if and else if event. 
+         * if < 3 else if < 4
+         * Average cut is 3 or better this Programm says YEAH!
+         * Average cut is 4 or worse this program says NO!
+         */
          if(average(grade) < 3){
           System.out.println("YEAH! Your cut is: " + average(grade));
         }
