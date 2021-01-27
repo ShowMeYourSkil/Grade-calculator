@@ -35,7 +35,12 @@ public class Main {
         for(int i = 0; i < grade.length; i++){
             grade [i] = scanner.nextDouble();
         }
-         System.out.println("Your cut is: " + average(grade));
+         if(average(grade) < 3){
+          System.out.println("YEAH! Your cut is: " + average(grade));
+        }
+        else if(average(grade) > 4){
+          System.out.println("Oh NO... Your cut is: " + average(grade));
+        }
         scanner.close();
     }
 }
